@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep-Dive into De-Sheddingy</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+      <div class="nav-wrapper">
+        <nav class="nav-header">
+            <!-- logo -->
+            <a href="../index.html" class="logo">
+                <img src="../images/gg_logo.png" alt="Gibby's Grooming Logo">
+            </a>
+
+            <!-- hamburger -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+            <ul class="main_nav" id="myTopnav">
+
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                
+                  <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                    <li class="dropdown">
+                        <a href="../services/services.html" class="dropdown_btn">Services</a>
+                        <div class="dropdown_menu">
+                            <a href="../services/appointment.html">Book Appointment</a>
+                            <a href="../services/reviews.html">Reviews</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../contact/contact.html" class="dropdown_btn">Contact</a>
+                        <div class="dropdown_menu">
+                            <a href="../contact/careers.html">Careers</a>
+                        </div>
+                    </li>
+                <!-- dropdown ends -->
+                <li><a href="blog.html">Blog</a></li>
+            </ul>  
+    </div>     
+    </header>
+
+    <main>
+        <div class="blog_template">
+
+          <div class="blog_nav">
+            <p><a href="blog.html">Back to posts</a></p>
+          </div>
+
+          <div class="blog_heading">
+            <h1>Deep-Dive into De-Shedding</h1>
+            <p>Published on <time datetime="2024-12-10">December 10, 2024</time></p>
+            <img src="../images/lab_bath.jpg" alt="Labrador taking a bath">
+          </div>
+          
+          <div class="blog_text">
+              <p>De-shedding can be uncomfortable for you and your dog! Redness, itchy and dry skin, matting, and overheating are just some of the risks your pet may endure if they are shedding a lot. Be sure to contact your veternarian if you  notice your pet is in pain. </p>
+
+              <ol>
+                <li><h2>Why Is De-Shedding Important?</h2>Excess shedding isn’t just about mess. It can lead to matting, skin redness, and irritation. Over time, if not addressed, it can cause more serious issues, like dry skin and overheating. Proper de-shedding helps your dog’s coat stay smooth and healthy, and it keeps your home a little cleaner too!</li>
+                <li><h2>Signs Your Dog Needs De-Shedding:</h2>If you notice your dog scratching more than usual, their fur feels rough, or you see mats developing, these are signs that your dog may need some help with de-shedding. Long-haired breeds are particularly prone to mats, which can trap dirt and moisture, leading to skin problems.</li>
+                <li><h2>The Right Tools for the Job:</h2>Using the right tools is key to effective de-shedding. A de-shedding brush or comb designed for your dog's coat type can help remove loose fur without causing discomfort. Regular brushing can help prevent mats and reduce shedding, while also allowing you to check for any skin issues early on.</li>
+                <li><h2>De-Shedding Sessions at Gibby’s:</h2>If de-shedding seems like too much to handle at home, don’t worry! Our professional groomers at Gibby's Grooming are trained to safely and effectively manage the de-shedding process. We use high-quality tools and products to make sure your pet's coat is left smooth and free of tangles—without causing any discomfort!</li>
+                <li><h2>Stay Vigilant and Visit the Vet:</h2>Excessive shedding can sometimes be a sign of underlying health issues. If your pet seems to be shedding abnormally or showing signs of discomfort like itching, redness, or dry patches, it's a good idea to schedule a visit with your veterinarian to rule out any medical concerns.</li>
+            </ol>
+            
+            <p>While shedding is a natural part of your pet's life, keeping it under control is essential for their comfort and health. Regular grooming, proper tools, and professional help can make a huge difference in how your pet feels—and how much fur you find around your house!</p>
+          </div>
+
+          <!-- BOOKING CONTAINER -->
+            
+        <div class="booking_container">
+          <div id="white_dog">
+              <img src="../images/white_dog.jpg" alt="Small white dog">
+          </div>
+          
+          <div id="booktext">
+              <h3>Ready to Book?</h3>
+              <h4>Secure a spot for your pet today!</h4>
+              <a href="../services/appointment.html" class="button-link">Book Appointment</a><br>
+          </div>
+      </div>
+      </div>
+
+      <button id="scrollTopBtn" title="Go to top">↑</button>
+
+      </main>
+
+      <footer>
+        <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+        <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+        
+        <p>Follow us for more updates!  
+          <a href="https://instagram.com">Instagram</a> |  
+          <a href="https://facebook.com">Facebook</a> |  
+          <a href="https://tiktok.com">TikTok</a>
+        </p>
+        <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+      </footer>
+      <script src="../script.js"></script>
+
+</body>
+</html>

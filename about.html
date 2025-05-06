@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="nav-wrapper">
+            <nav class="nav-header">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="images/gg_logo.png" alt="Gibby's Grooming Logo">
+                </a>
+
+                <!-- hamburger -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+                <ul class="main_nav" id="myTopnav">
+
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                      <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                        <li class="dropdown">
+                            <a href="services/services.html" class="dropdown_btn">Services</a>
+                            <div class="dropdown_menu">
+                                <a href="services/appointment.html">Book Appointment</a>
+                                <a href="services/reviews.html">Reviews</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="contact/contact.html" class="dropdown_btn">Contact</a>
+                            <div class="dropdown_menu">
+                                <a href="contact/careers.html">Careers</a>
+                            </div>
+                        </li>
+                    <!-- dropdown ends -->
+                    <li><a href="blog/blog.html">Blog</a></li>
+                </ul>  
+        </div>
+    </header> 
+    
+    <main>
+    <div id="aboutgrid">
+            <div id="about-main">
+                <div id="about">
+                    <h1>About Us</h1>
+                    <img src="images/shower_dog.jpg" alt="Dog getting a shower" width="800"><br>
+                </div>
+                
+                <div id="why">
+                    <h2>Why Choose Gibby's?</h2>
+                    <p>At Gibby's Grooming, we believe every pet deserves to look and feel their very best! Whether giving calming spa treatment or tackling tangled coats, we're here to help. Our values prioritize providing all customers- both humans and pets alike- an enjoyable and comfortable experience. We will always put your furry friends' needs first, and we will always make sure they're returning to you happy!</p>
+                </div>
+            </div>
+
+
+            <div id="history">
+                <div id="story">
+                <h2>Our Story</h2>
+                <p>Gibby's Grooming is a local independent animal grooming salon in Barksville, Florida that's committed to caring and high quality care for pets. Established in <time datetime="2022-02-02">February 2, 2022</time>, we strive to provide fun and loving treatment to every furry friend that comes through our doors! Gibby's Grooming all started from a fun hobby of clipping <strong>Gibby's</strong> fur to our own salon!</p>
+                </div>
+
+                <div id="gibby">
+                <img src="images/gibby_shower.jpeg" alt="Gibby in the shower" >
+                </div>
+        
+                <!-- BOOKING CONTAINER -->
+                <div id="about_book">
+                    <h3>Ready to Book?</h3>
+                    <h4>Secure a spot for your pet today!</h4>
+                    <a href="services/appointment.html" class="button-link">Book Appointment</a><br>
+                </div>
+            </div>    
+    </div> 
+    </main>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    <footer>
+        <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+        <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+        
+        <p>Follow us for more updates!  
+          <a href="https://instagram.com">Instagram</a> |  
+          <a href="https://facebook.com">Facebook</a> |  
+          <a href="https://tiktok.com">TikTok</a>
+        </p>
+        <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+      </footer>
+
+      <script src="script.js"></script>
+
+</body>
+</html>

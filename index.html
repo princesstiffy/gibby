@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibby's Grooming</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="nav-wrapper">
+            <nav class="nav-header">
+                <!-- logo -->
+                <a href="index.html" class="logo">
+                    <img src="images/gg_logo.png" alt="Gibby's Grooming Logo">
+                </a>
+
+                <!-- hamburger -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+                <ul class="main_nav" id="myTopnav">
+
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                      <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                        <li class="dropdown">
+                            <a href="services/services.html" class="dropdown_btn">Services</a>
+                            <div class="dropdown_menu">
+                                <a href="services/appointment.html">Book Appointment</a>
+                                <a href="services/reviews.html">Reviews</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="contact/contact.html" class="dropdown_btn">Contact</a>
+                            <div class="dropdown_menu">
+                                <a href="contact/careers.html">Careers</a>
+                            </div>
+                        </li>
+                    <!-- dropdown ends -->
+                    <li><a href="blog/blog.html">Blog</a></li>
+                </ul>  
+        </div>
+
+            <div class="hero_content"> 
+                <div id="hero_image">
+                    <img src="images/lab_bath.jpg" alt="Hero image of dog bathing" loading="lazy">
+                </div>
+                <div id="hero_text">
+                    <div class="hero_text_content">
+                        <h1 id="hero_header">Welcome to Gibby's Grooming</h1>
+                        <p>Experience the best pet grooming services for your furry friends!</p>
+
+                        <!-- button links -->
+                        <!-- links styled as buttons since links cant be anchored to buttons/comes up as invalid -->
+
+                        <div class="hero_buttons">
+                            <a href="services/appointment.html" class="button-link">Book Appointment</a>
+                            <a href="services/services.html" class="button-link">Grooming Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    </header> 
+
+           
+        
+
+    <main>
+    <div id="index_grid">
+        <!-- index_grid is the container for index page only -->
+
+        <!-- WELCOME CONTAINER -->
+
+            <div id="welcome">
+                <h2 class="header">About Us</h2>
+                <p>Where every furry friend is treated like royalty! We believe in turning every bath, brush, and trim into a paws-itive experience. Our goal is to make your furry friend feel like the star they truly are. Whether they're in need of a spa day or just a little TLC, Gibby's Grooming is here to keep them looking and feeling their absolute best. </p>
+            </div>
+            
+            <div id="blowdry">
+                <video src="videos/dog_blowdry.mp4" muted autoplay loop>
+                    Sorry, your browser doesn't support HTML5 
+                </video>
+            </div>
+
+            <div id="index_service">
+            <!--brief info for services and include review stuff-->
+                <h2 class="header">Our Grooming Services</h2>
+                <p>Give your pet our signature Gibby's Very Important Pet Experience, where they will get the spa day of their life! A thorough and refreshing full groom, your fluffy friend will come out feeling- and looking- better than ever! <a href="services/services.html">Learn about our full groom and other services here.</a></p>
+            </div>
+
+
+        <!-- REVIEWS CONTAINER -->
+
+            <div id="index_reviews">
+                <h2 id="rev_heading">Two Paws Up!</h2>
+                <h4 id="rev_subhead">Some of Our Customer Reviews</h4>
+                <a id="rev_button" href="services/reviews.html" class="button-link">More Reviews</a>
+
+                <div id="rev1">
+                    <img src="images/haircut_cat.jpg" alt="Cat getting a haircut" loading="lazy">
+                    <dl>
+                            <dt><b>Tina Rodriguez</b> - <small><time datetime="2023-10-10">October 10, 2023</time></small></dt>
+                            <dd><q>My cat usually hates grooming, but she was surprisingly calm at Gibby's. They have the magic touch!</q></dd>
+                            <dd class="rev_appt"><small> Appointment Booked: Gibby's VIP & Pawdicure</small></dd>
+                    </dl>
+                </div>
+                
+
+                <div id="rev2">
+                    <img src="images/haircut_dog.jpg" alt="small dog getting a haircut" loading="lazy">
+                    <dl>
+                        <dt><b>Marcus Diaz</b> - <small><time datetime="2023-11-22">November 22, 2023</time></small></dt>
+                            <dd><q>The team did an incredible job on our little puppy — now she's fluffier than ever and strutting her stuff!</q></dd>
+                            <dd class="rev_appt"><small> Appointment Booked: Puppy Grooming & Blueberry Facial</small></dd>
+                    </dl>
+                </div>
+
+
+                <div id="rev3">
+                    <img src="images/bathrobe_dog.jpg" alt="white dog in a robe" loading="lazy">
+                    <dl>
+                        <dt><b>Samantha Green</b> - <small><time datetime="2024-02-15">February 15, 2024</time></small></dt>
+                        <dd><q>Gibby's Grooming made my pup look like a show dog! He came home smelling amazing. We'll 100% be back!</q></dd>
+                        <dd class="rev_appt"><small> Appointment Booked: Gibby's VIP</small></dd>
+                    </dl>
+                </div>
+            </div>
+
+
+        <!-- LOCATION CONTAINER -->
+
+            <div id="location_img">
+                <img src="images/storefront.jpg" alt="Our storefront" loading="lazy">
+            </div>
+
+            <div id="index_location">
+                <h3 id="location_heading">Salon Location</h3>
+                   
+                <h4>Location</h4>
+                <p>123 Paw Street,<br>
+                    Barksville,<br>
+                    Florida 56789</p>
+
+                <h4>Email</h4>
+                <p><a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+                 
+                <h4>Phone</h4>
+                <p><a href="tel:1234567890">123-456-7890</a></p>
+                <p><small>Our dogs are our main priorities during grooming sessions and we may not answer calls. Please also make use of our <a href="services/appointment.html">booking, </a><a href="contact/contact.html">inquiry form,</a> or leave us a voice mail.</small></p>
+            </div>
+                  
+            
+
+        <!-- BLOG CONTAINER -->
+            <!--embeded blog posts--> 
+            <div id="index_blog">
+                <h3>Featured Blog Posts</h3>
+            <div id="blogpost1">
+                  <article>
+                    <img src="images/dog_comb.jpg" alt="dog getting brushed with comb" loading="lazy">
+                    <h4><a href="blog/blog-post1.html">5 Grooming Tips to Keep Your Pup Happy</a></h4>
+                    <p>Learn how to keep your furry friend looking their best. <a href="blog/blog-post1.html">Read more...</a></p>
+                  </article>
+            </div>
+              
+            <div id="blogpost2">
+                  <article>
+                    <img src="images/dogs_cats.jpg" alt="dogs and cats" loading="lazy">
+                    <h4><a href="blog/blog-post4.html">Gibby's Gift Guide! Valentine's with Your Pets</a></h4>
+                    <p>Celebrate Valentine's Day with a gift guide!. <a href="blog/blog-post4.html">Read more...</a></p>
+                  </article>
+            </div>
+              
+            <div id="blogpost3">
+                <article>
+                  <img src="images/dog_nails.jpg" alt="dog getting nails cut" loading="lazy">
+                  <h4><a href="blog/blog-post2.html">The Benefits of Regular Nail Trimming</a></h4>
+                  <p>Nail trims are essential for your pet's health. Find out why! <a href="blog/blog-post3.html">Read more...</a></p>
+                </article>
+            </div>
+            </div>
+        
+
+        <!-- BOOKING CONTAINER -->
+            
+        <div class="booking_container">
+            <div id="white_dog">
+                <img src="images/white_dog.jpg" alt="Small white dog">
+            </div>
+            
+            <div id="booktext">
+                <h3>Ready to Book?</h3>
+                <h4>Secure a spot for your pet today!</h4>
+                <a href="services/appointment.html" class="button-link">Book Appointment</a><br>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+
+    <div id="dog-tip-box">
+        <span class="close-btn" onclick="closeTip()">×</span>
+        <p id="dog-tip-text">Click the button for a tip!</p>
+      </div>
+      
+      <button id="draggable-tip-button" onclick="showRandomTip()">🐶 Get a Grooming Tip</button>
+
+      <div id="dog-tip-box">
+        <span class="close-btn" onclick="closeTip()">×</span>
+        <p id="dog-tip-text">Here's your grooming tip!</p>
+      </div>
+
+    
+
+    
+          </main>
+
+    <footer>
+            <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+            <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+            
+            <p>Follow us for more updates!  
+              <a href="https://instagram.com">Instagram</a> |  
+              <a href="https://facebook.com">Facebook</a> |  
+              <a href="https://tiktok.com">TikTok</a>
+            </p>
+            <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

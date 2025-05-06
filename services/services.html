@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <nav class="nav-header">
+                <!-- logo -->
+                <a href="../index.html" class="logo">
+                    <img src="../images/gg_logo.png" alt="Gibby's Grooming Logo">
+                </a>
+
+                <!-- hamburger -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+                <ul class="main_nav" id="myTopnav">
+
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    
+                      <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                        <li class="dropdown">
+                            <a href="services.html" class="dropdown_btn">Services</a>
+                            <div class="dropdown_menu">
+                                <a href="appointment.html">Book Appointment</a>
+                                <a href="reviews.html">Reviews</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="../contact/contact.html" class="dropdown_btn">Contact</a>
+                            <div class="dropdown_menu">
+                                <a href="../contact/careers.html">Careers</a>
+                            </div>
+                        </li>
+                    <!-- dropdown ends -->
+                    <li><a href="../blog/blog.html">Blog</a></li>
+                </ul>  
+        </div>
+        
+    </header>
+
+    <main>
+    <div id="service_grid">
+
+        <div id="service_head">
+            <div id="service_h1">
+                <h1>Grooming Services</h1>
+            </div>
+
+            <div id="service_headtext">
+                <p>Gibby's Grooming has everything your pet needs to look and feel their best. Explore our range of services tailored for every breed and personality.</p>
+                <a href="appointment.html" class="button-link">Book Appointment</a>
+            </div>
+        </div>
+
+
+        <div id="vip">
+            <h2>Gibby's VIP Experience</h2>
+            <img src="../images/icon_vip.png" alt="Icon of dog - full groom">
+            <p><u>Full groom:</u> Give your pet our signature Gibby's VIP (Very Important Pet) Experience, where they will get the spa day of their life! We start with a coat and health assessment, followed by a luxurious bath using natural products and optional conditioning. After a gentle blow-dry, we trim nails, clean ears, and provide hygiene grooming. Precise clipping and scissor work bring out their best look, topped off with a stylish bow or bandana, and a spritz of scented mist. Paw-sitively perfect from nose to tail!</p>
+        </div>
+
+        <div id="fresh">
+            <h3>Fresh & Fluffy</h3>
+            <img src="../images/icon_brush.png" alt="Icon of brush - bath and brush">
+            <p><u>Bath & Brush:</u> A refreshing and calming bath with a gentle brush-out to keep your pet clean and happy! This treatment helps manage dry skin, shedding, and matting. We also include nail care and ear cleaning. </p>
+        </div>
+
+        <div id="shed">
+            <h3>De-Shedding Treatment</h3>
+            <img src="../images/icon_shed.png" alt="Icon of brush with shed - shed treatment">
+            <p><u>De-Shedding Bath & Groom:</u> Our specialized de-shedding treatment reduced molting, gets rids of tangles and eases skin irritation. We provide an evaluation of your pet's coat and health, as well as using natural products tailored to provide a gentle cleanse. Your pet is given a de-shedding solution suitable for their specific coat. </p>
+        </div>
+
+        <div id="puppy">
+            <h3>Puppy & Kitten Grooming</h3>
+            <img src="../images/icon_baby.png" alt="Icon of puppy and kitten - young pet groom">
+            <p><u>Young Pet Groom:</u>Start your baby pet on the right paw with our special Puppy and Kitten Groom! This session works on gentle and sensitive skin, along with an eye, foot, and anal tidy. </p>
+        </div>
+
+        <div id="additions">
+            <div id="additions_head">
+                <h2>Add-On Spa Treatments</h2>
+                <p>Customize your pet's grooming experience by adding in additional treatments and remedies from our selection! We offer a variety of solutions to address your furry friend's specific needs.</p>
+            </div>
+                
+                <div id="condition">
+                    <img src="../images/icon_condition.png" alt="Icon of bottle - conditioner treatment">
+                    <h4>Deep Conditioning</h4>
+                    <p>Infused with <em>Shea Butter</em>, our deep conditioning treatment nourishes skin and revitalizes knotty and dry coats.</p>
+                </div>
+                
+                <div id="teeth">
+                    <img src="../images/icon_teeth.png" alt="Icon of toothbrush - teeth cleaning">
+                    <h4>Teeth Cleaning</h4>
+                    <p>Maintain your pet's dental healthy by adding on our teeth cleaning. It works to remove plaque and tartar build-up, prevent gum inflammation, and improve overall dental health.</p>
+                </div>
+                   
+                <div id="paws">
+                    <img src="../images/icon_paw.png" alt="Icon of paw - paw trim">
+                    <h4>Pawdicure</h4>
+                    <p>Our Pawdicure includes both a nail and pad trim, which ensures optimal grip for your pet to feel more comfortable.</p>
+                </div>
+
+                <div id="spa">
+                    <img src="../images/icon_bath.png" alt="Icon of bath tub - hot spa" width="200">
+                    <h4>Hot Spa</h4>
+                    <p>The Hot Spa treatment will leave your pet with a healthier and itch-free coat, removing hotspots, matting, and bad odors.</p>
+                </div>
+
+                <div id="facial">
+                    <img src="../images/icon_facial.png" alt="Icon of cat with facial - blueberry facial">
+                    <h4>Blueberry Facial</h4>
+                    <p>Tackle tear and beard staining with our soothing blueberry facial. This is safe around the eyes and mouth, working to minimize the appearance of stains around problem areas.</p>
+                </div>
+
+                <div id="anal">
+                    <img src="../images/icon_health.png" alt="Icon of health kit - anal gland treatment">
+                    <h4>Anal Gland Expression</h4>
+                    <p>Help maintain your pet's comfort and reduce bad odors with our anal gland expression and cleaning.</p>
+                </div>
+                  
+        </div>
+        
+        <!-- BOOKING CONTAINER -->
+            
+        <div class="booking_container">
+            <div id="white_dog">
+                <img src="../images/white_dog.jpg" alt="Small white dog">
+            </div>
+            
+            <div id="booktext">
+                <h3>Ready to Book?</h3>
+                <h4>Secure a spot for your pet today!</h4>
+                <a href="appointment.html" class="button-link">Book Appointment</a><br>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <button id="scrollTopBtn" title="Go to top">↑</button>
+
+        <footer>
+            <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+            <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+            
+            <p>Follow us for more updates!  
+              <a href="https://instagram.com">Instagram</a> |  
+              <a href="https://facebook.com">Facebook</a> |  
+              <a href="https://tiktok.com">TikTok</a>
+            </p>
+            <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+          </footer>
+          <script src="../script.js"></script>
+
+</body>
+</html>

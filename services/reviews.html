@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <nav class="nav-header">
+                <!-- logo -->
+                <a href="../index.html" class="logo">
+                    <img src="../images/gg_logo.png" alt="Gibby's Grooming Logo">
+                </a>
+
+                <!-- hamburger -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+                <ul class="main_nav" id="myTopnav">
+
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    
+                      <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                        <li class="dropdown">
+                            <a href="services.html" class="dropdown_btn">Services</a>
+                            <div class="dropdown_menu">
+                                <a href="appointment.html">Book Appointment</a>
+                                <a href="reviews.html">Reviews</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="../contact/contact.html" class="dropdown_btn">Contact</a>
+                            <div class="dropdown_menu">
+                                <a href="../contact/careers.html">Careers</a>
+                            </div>
+                        </li>
+                    <!-- dropdown ends -->
+                    <li><a href="../blog/blog.html">Blog</a></li>
+                </ul>  
+        </div>
+    </header> 
+
+    <main id="reviews_section">
+        <header id="reviews_head">
+            <h1>Two Paws Up!</h1>
+            <p>Read what our happy pet parents have to say!</p>
+            <img src="../images/gg_logo.png" alt="gibby's logo">
+        </header>
+    
+        
+            <div class="review">
+                <img src="../images/haircut_cat.jpg" alt="Cat getting a haircut">
+                <dl>
+                    <dt><b>Tina Rodriguez</b> - <small><time datetime="2023-10-10">October 10, 2023</time></small></dt>
+                    <dd><q>My cat usually hates grooming, but she was surprisingly calm at Gibby's. They have the magic touch!</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Gibby's VIP & Pawdicure</small></dd>
+                </dl>
+            </div>
+    
+            <div class="review">
+                <img src="../images/haircut_dog.jpg" alt="Small dog getting a haircut">
+                <dl>
+                    <dt><b>Marcus Diaz</b> - <small><time datetime="2023-11-22">November 22, 2023</time></small></dt>
+                    <dd><q>The team did an incredible job on our little puppy — now she's fluffier than ever and strutting her stuff!</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Puppy Grooming & Blueberry Facial</small></dd>
+                </dl>
+            </div>
+    
+            <div class="review">
+                <img src="../images/bathrobe_dog.jpg" alt="White dog in a robe">
+                <dl>
+                    <dt><b>Samantha Green</b> - <small><time datetime="2024-02-15">February 15, 2024</time></small></dt>
+                    <dd><q>Gibby's Grooming made my pup look like a show dog! He came home smelling amazing. We'll 100% be back!</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Gibby's VIP</small></dd>
+                </dl>
+            </div>
+    
+            <div class="review">
+                <img src="../images/lab_bath.jpg" alt="Lab taking a bath">
+                <dl>
+                    <dt><b>Emma Williams</b> - <small><time datetime="2024-03-05">March 5, 2024</time></small></dt>
+                    <dd><q>My lab has never looked better! His coat is so soft and shiny. The de-shedding treatment really helped.</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: De-Shedding Treatment</small></dd>
+                </dl>
+            </div>
+    
+            <div class="review">
+                <img src="../images/dog_shave.jpg" alt="Dog getting shaved">
+                <dl>
+                    <dt><b>Olivia Chen</b> - <small><time datetime="2024-01-12">January 12, 2024</time></small></dt>
+                    <dd><q>My baby was so well taken care of. The team was gentle and kind, making sure she was comfortable the whole time.</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Puppy & Kitten Grooming</small></dd>
+                </dl>
+            </div>
+
+
+           
+
+
+            <div class="review">
+                <img src="../images/dog_nails.jpg" alt="Dog getting its nails cut">
+                <dl>
+                    <dt><b>Ryan Smith</b> - <small><time datetime="2022-08-17">August 17, 2022</time></small></dt>
+                    <dd><q>My dog has never been good at getting his nails cut, but he trusted the team at Gibby's as if they raised him themselves!</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Gibby's VIP & Pawdicure</small></dd>
+                </dl>
+            </div>
+    
+            <div class="review">
+                <img src="../images/poodle_cut.jpg" alt="Poodle getting a haircut">
+                <dl>
+                    <dt><b>Ryan Gosling</b> - <small><time datetime="2025-03-21">March 21, 2025</time></small></dt>
+                    <dd><q>The team was so nice to my poodle, who's very picky with who touches her. She's looking and feeling better than ever!</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Puppy Grooming & Blueberry Facial</small></dd>
+                </dl>
+            </div>
+
+            <aside id="rev_aside">
+                <h2>Ready to Book?</h2>
+                <h4>Secure a spot for your pet today!</h4>
+                <a href="services/appointment.html" class="button-link">Book Appointment</a>
+                <img src="../images/icon_baby.png" alt="puppy and kitten icon"> 
+            </aside>
+    
+            <div class="review">
+                <img src="../images/soap_dog.jpg" alt="White dog in a robe">
+                <dl>
+                    <dt><b>Ciara Folk</b> - <small><time datetime="2024-06-11">June 11, 2024</time></small></dt>
+                    <dd><q>I've become a regular at Gibby's and I love the staff and the place! It's so cute and clean in there, and the team is always the sweetest with my pup!</q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Gibby's VIP</small></dd>
+                </dl>
+            </div>
+
+            <div class="review">
+                <img src="../images/wet_dog_cut.jpg" alt="Cat getting a haircut">
+                <dl>
+                    <dt><b>Marilyn Jimenez</b> - <small><time datetime="2025-02-09">February 09, 2025</time></small></dt>
+                    <dd><q>My dog isn't very good with grooming appointments, but the team had no complaints and neither did he! </q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Gibby's VIP & Pawdicure</small></dd>
+                </dl>
+            </div>
+    
+            <div class="review">
+                <img src="../images/gibby_shower.jpeg" alt="Small dog getting a haircut">
+                <dl>
+                    <dt><b>Tiffany Rubio</b> - <small><time datetime="2024-04-29">April 29, 2024</time></small></dt>
+                    <dd><q>The team always does great with my two dogs! They leave them looking, smelling, and feeling great! </q></dd>
+                    <dd class="rev_appt"><small> Appointment Booked: Puppy Grooming & Blueberry Facial</small></dd>
+                </dl>
+            </div>
+    
+
+            <button id="scrollTopBtn" title="Go to top">↑</button>
+
+        </main>
+    <footer>
+        <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+        <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+        
+        <p>Follow us for more updates!  
+          <a href="https://instagram.com">Instagram</a> |  
+          <a href="https://facebook.com">Facebook</a> |  
+          <a href="https://tiktok.com">TikTok</a>
+        </p>
+        <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+      </footer>
+      <script src="../script.js"></script>
+
+</body>
+</html>

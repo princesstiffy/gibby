@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibby's Blog</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <header>
+      <div class="nav-wrapper">
+        <nav class="nav-header">
+            <!-- logo -->
+            <a href="../index.html" class="logo">
+                <img src="../images/gg_logo.png" alt="Gibby's Grooming Logo">
+            </a>
+
+            <!-- hamburger -->
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+            <ul class="main_nav" id="myTopnav">
+
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                
+                  <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                    <li class="dropdown">
+                        <a href="../services/services.html" class="dropdown_btn">Services</a>
+                        <div class="dropdown_menu">
+                            <a href="../services/appointment.html">Book Appointment</a>
+                            <a href="../services/reviews.html">Reviews</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../contact/contact.html" class="dropdown_btn">Contact</a>
+                        <div class="dropdown_menu">
+                            <a href="../contact/careers.html">Careers</a>
+                        </div>
+                    </li>
+                <!-- dropdown ends -->
+                <li><a href="blog.html">Blog</a></li>
+            </ul>  
+    </div>
+        
+    </header>
+
+    <main>
+        <div id="blog_posts">
+
+          <div id="blog_header">
+            <h1>Welcome to Gibby's Grooming Blog!</h1>
+            <p>Get the latest tips, stories, and advice on pet grooming and care.</p>
+          </div>
+
+            <article>
+              <h2><a href="blog-post4.html">Gibby's Gift Guide! Valentine's with Your Pets</a></h2>
+              <img src="../images/dogs_cats.jpg" alt="Dogs and cats sitting together">
+              <p>Published on <time datetime="2025-02-04">February 04, 2025</time></p>
+              <p>Celebrate Valentine's Day with us here at Gibby's Grooming with a gift guide for that special furry friend in your life!<a href="blog-post4.html"> Read more...</a></p>
+            </article>
+
+            <article>
+              <h2><a href="blog-post2.html">The Benefits of Regular Nail Trimming</a></h2>
+              <img src="../images/dog_nails.jpg" alt="Dog getting its nails trimmed">
+              <p>Published on <time datetime="2025-01-15">January 15, 2025</time></p>
+              <p>Nail trims are essential for your pet's health. Find out why and how often you should trim. <a href="blog-post2.html">Read more...</a></p>
+            </article>
+
+            <article>
+              <h2><a href="blog-post1.html">5 Grooming Tips to Keep Your Pup Happy</a></h2>
+              <img src="../images/dog_comb.jpg" alt="Dog getting brushed with a comb">
+              <p>Published on <time datetime="2025-01-08">January 8, 2025</time></p>
+              <p>Learn how to keep your furry friend looking and feeling their best with these simple grooming tips. <a href="blog-post1.html">Read more...</a></p>
+            </article>
+
+            <article>
+              <h2><a href="blog-post3.html">Deep-Dive into De-Shedding</a></h2>
+              <img src="../images/lab_bath.jpg" alt="Labrador taking a bath">
+              <p>Published on <time datetime="2024-12-10">December 10, 2024</time></p>
+              <p>Shedding isn't just annoying to you, but for your pet too! Learn more about the benefits of de-shedding. <a href="blog-post3.html">Read more...</a></p>
+            </article>
+        </div>
+
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    </main>
+
+    <footer>
+        <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+        <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+        
+        <p>Follow us for more updates!  
+          <a href="https://instagram.com">Instagram</a> |  
+          <a href="https://facebook.com">Facebook</a> |  
+          <a href="https://tiktok.com">TikTok</a>
+        </p>
+        <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+      </footer>
+
+      <script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <nav class="nav-header">
+                <!-- logo -->
+                <a href="../index.html" class="logo">
+                    <img src="../images/gg_logo.png" alt="Gibby's Grooming Logo">
+                </a>
+
+                <!-- hamburger -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+                <ul class="main_nav" id="myTopnav">
+
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    
+                      <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                        <li class="dropdown">
+                            <a href="../services/services.html" class="dropdown_btn">Services</a>
+                            <div class="dropdown_menu">
+                                <a href="../services/appointment.html">Book Appointment</a>
+                                <a href="../services/reviews.html">Reviews</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="contact.html" class="dropdown_btn">Contact</a>
+                            <div class="dropdown_menu">
+                                <a href="careers.html">Careers</a>
+                            </div>
+                        </li>
+                    <!-- dropdown ends -->
+                    <li><a href="../blog/blog.html">Blog</a></li>
+                </ul>  
+        </div>
+    </header> 
+
+    <main>
+        <div class="hero_content"> 
+            <div id="hero_image">
+                <video autoplay muted loop>
+                    <source src="../videos/smalldog__shave.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="hero_text">
+                <div class="hero_text_content">
+                    <h1 id="hero_header">Career Opportunities</h1>
+                    <p>Interested in working for Gibby's? We're always on the lookout for dedicated and enthusiastic people to join our team!</p>
+                </div>
+            </div>
+        </div>
+        <div id="career_info">
+    
+            <div id="career_benefits">
+            <div class="benefits_text">
+                <p>At Gibby's Grooming, we value a love for animals, a strong work ethic, and a positive attitude. Here's what you can expect when you join our team:</p>
+                <ul>
+                    <li><strong>Fun & Friendly Atmosphere:</strong> We're a team that supports each other, loves animals, and enjoys coming to work every day.</li>
+                    <li><strong>Training & Development:</strong> Whether you're new to the grooming world or have experience, we provide training to help you grow and succeed.</li>
+                    <li><strong>Great Pay & Benefits:</strong> We offer competitive wages and benefits for full-time staff. Plus, enjoy employee discounts on our services and products!</li>
+                    <li><strong>Work with Pets:</strong> If you love working with animals, this is the perfect place for you. You'll be grooming dogs of all breeds and sizes, ensuring they leave looking and feeling their best.</li>
+                </ul>
+            </div>
+            <div class="benefits_image">
+                <img src="../images/poodle_cut.jpg" alt="poodle getting a haircut">
+            </div>
+            </div>
+    
+  
+    
+            <div id="career_openings">
+                <h2>Current Openings:</h2>
+                <ul>
+                    <li><strong>Dog Groomer:</strong> Full-time and part-time positions available for experienced groomers. Must have prior grooming experience and a passion for working with dogs.</li>
+                    <li><strong>Receptionist:</strong> Customer service-oriented individuals to help with scheduling appointments, answering phone calls, and assisting customers.</li>
+                    <li><strong>Assistant Groomer:</strong> Ideal for those looking to learn the art of grooming! Must be enthusiastic and ready to assist with washing, drying, and prepping dogs for grooming.</li>
+                </ul>
+            </div>
+    
+
+                <div id="contact_form">
+                    <h3>Interested in joining our team? We'd love to hear from you!</h3>
+                    <form>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+            
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+            
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br>
+            
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" name="phone"><br>
+            
+                        <label for="comments">Comments</label><br>
+                        <textarea id="comments" name="comments" rows="5"></textarea><br>
+            
+                        <input type="submit" value="Submit">
+                    </form>
+    
+        </div>
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    </main>
+    <footer>
+        <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+        <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+        
+        <p>Follow us for more updates!  
+          <a href="https://instagram.com">Instagram</a> |  
+          <a href="https://facebook.com">Facebook</a> |  
+          <a href="https://tiktok.com">TikTok</a>
+        </p>
+        <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibby's Booking</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/rym3ibj.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <nav class="nav-header">
+                <!-- logo -->
+                <a href="../index.html" class="logo">
+                    <img src="../images/gg_logo.png" alt="Gibby's Grooming Logo">
+                </a>
+
+                <!-- hamburger -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+
+                <ul class="main_nav" id="myTopnav">
+
+                    <li><a href="../index.html" class="active">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    
+                      <!-- dropdown for nav bar for services & career pages. using ul anchored under ul didnt work/was invalid so have to use div & keep it all semantic-->
+                        <li class="dropdown">
+                            <a href="services.html" class="dropdown_btn">Services</a>
+                            <div class="dropdown_menu">
+                                <a href="appointment.html">Book Appointment</a>
+                                <a href="reviews.html">Reviews</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="../contact/contact.html" class="dropdown_btn">Contact</a>
+                            <div class="dropdown_menu">
+                                <a href="../contact/careers.html">Careers</a>
+                            </div>
+                        </li>
+                    <!-- dropdown ends -->
+                    <li><a href="../blog/blog.html">Blog</a></li>
+                </ul>  
+        </div>
+    </header> 
+
+    <main id="appointments">
+        <div id="appt_head">
+            <h1>Schedule Your Pet's Next Grooming Appointment</h1>
+            <p>Ready to book? Fill out the forms below and build your desired spa day for your pet!</p>
+        </div>
+
+
+        <div id="pick_main">
+            <div id="pick_vip">
+                <h3>Gibby's VIP Experience</h3>
+                <img src="../images/icon_vip.png" alt="Icon of dog - full groom">
+                <p><u>Full groom:</u> We start with a coat and health assessment, followed by a luxurious bath using natural products and optional conditioning. After a gentle blow-dry, we trim nails, clean ears, and provide hygiene grooming.</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div id="pick_fresh">
+                <h3>Fresh & Fluffy</h3>
+                <img src="../images/icon_brush.png" alt="Icon of brush - bath and brush">
+                <p><u>Bath & Brush:</u> A refreshing and calming bath with a gentle brush-out to keep your pet clean and happy! This treatment helps manage dry skin, shedding, and matting. We also include nail care and ear cleaning. </p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div id="pick_shed">
+                <h3>De-Shedding Treatment</h3>
+                <img src="../images/icon_shed.png" alt="Icon of brush with shed - shed treatment">
+                <p><u>De-Shedding Bath & Groom:</u> We provide an evaluation of your pet's coat and health, as well as using natural products tailored to give a gentle cleanse. Your pet is given a de-shedding solution suitable for their specific coat. </p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div id="pick_puppy">
+                <h3>Puppy & Kitten Grooming</h3>
+                <img src="../images/icon_baby.png" alt="Icon of puppy and kitten - young pet groom">
+                <p><u>Young Pet Groom:</u>Start your baby pet on the right paw with our special Puppy and Kitten Groom! This session works on gentle and sensitive skin, along with an eye, foot, and anal tidy. </p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="pick_adds">
+            <div id="pick_addshead">
+                <h2>Add-On Spa Treatments</h2>
+
+                <p>Customize your pet's grooming experience by adding in additional treatments and remedies from our selection! We offer a variety of solutions to address your furry friend's specific needs.</p>
+            </div>
+
+            <div id="adds_form">          
+                    <h3>Choose Your Additional Services</h3>
+
+                    <form action="#">
+                        <label>
+                            <input type="checkbox" name="services" value="deep-conditioning">
+                            Deep Conditioning + $10
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="teeth-cleaning">
+                            Teeth Cleaning + $10
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="pawdicure">
+                            Pawdicure + $10
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="hot-spa">
+                            Hot Spa + $15
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="blueberry-facial">
+                            Blueberry Facial + $5
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="services" value="anal-gland-expression">
+                            Anal Gland Expression + $10
+                        </label>
+                    </form>
+                </div>
+        </div>
+
+        <div id="appt_forms">
+            <div id="appt_formshead">
+                <h2>Tell Us About Yourself...</h2>
+                <p>Please fill out the form below with your and your pet's information!</p>
+            </div>
+        
+            <form action="#" id="groomingForm">
+                <!-- Customer Info -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+        
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+        
+                <!-- Pet Info -->
+                <fieldset>
+                    <legend>Pet Information</legend>
+                    
+                    <label for="pet_name">Pet's Name:</label>
+                    <input type="text" id="pet_name" name="pet_name" required>
+        
+                    <label for="pet_type">Type of Pet:</label>
+                    <select id="pet_type" name="pet_type" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="other">Other</option>
+                    </select>
+        
+                    <label for="breed">Breed:</label>
+                    <input type="text" id="breed" name="breed">
+        
+                    <label for="weight">Weight (lbs):</label>
+                    <input type="number" id="weight" name="weight" min="1">
+                </fieldset>
+        
+                <!-- Appointment Details -->
+                <fieldset>
+                    <legend>Appointment Details</legend>
+        
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+        
+                    <label for="time">Select Time:</label>
+                    <input type="time" id="time" name="time" required>
+        
+                    <label for="services">Requested Services:</label>
+                    <textarea id="services" name="services" rows="4" placeholder="Describe the grooming services needed"></textarea>
+                </fieldset>
+        
+                <input type="submit" value="Submit Appointment">
+            </form>
+        </div>
+
+        
+        <button id="scrollTopBtn" title="Go to top">↑</button>
+
+    </main>
+            <footer>
+                <p><strong>Gibby's Grooming</strong> — Where Happy Pets Get Pawsitively Pampered! </p>
+                <p> &#128205; 123 Paw Street, Barksville, FL 56789 | <a href="tel:1234567890">123-456-7890</a> | <a href="mailto:info@gibbysgrooming.com">info@gibbysgrooming.com</a></p>
+                
+                <p>Follow us for more updates!  
+                  <a href="https://instagram.com">Instagram</a> |  
+                  <a href="https://facebook.com">Facebook</a> |  
+                  <a href="https://tiktok.com">TikTok</a>
+                </p>
+                <p>&copy; 2025 Gibby's Grooming. All rights reserved.</p>
+              </footer>
+
+              <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+              <script src="../script.js"></script>
+
+</body>
+</html>
